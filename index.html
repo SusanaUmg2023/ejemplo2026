@@ -1,0 +1,117 @@
+<!-- Formulario de Menú de Comida -->
+
+<form action="#" method="POST">
+
+       <h2>🍽️ Ordena tu Menú</h2>
+
+    <!-- Entrada de texto para el nombre -->
+
+    <div>
+
+        <label for="nombre">Nombre del Cliente:</label><br>
+
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+
+    </div>
+
+    <br>
+
+    <!-- Lista desplegable (Select) para el plato principal -->
+
+    <div>
+
+        <label for="plato">Elige tu Plato Principal:</label><br>
+
+        <select id="plato" name="plato" required>
+
+            <option value="">-- Selecciona una opción --</option>
+
+            <option value="hamburguesa">Hamburguesa con Queso 🍔</option>
+
+            <option value="pizza">Pizza Pepperoni 🍕</option>
+
+            <option value="tacos">Orden de Tacos 🌮</option>
+
+            <option value="ensalada">Ensalada César 🥗</option>
+
+        </select>
+
+    </div>
+
+    <br>
+
+    <!-- Botones de opción (Radio Buttons) para elegir el término o tamaño -->
+
+    <div>
+
+        <label>Tamaño de la Bebida:</label><br>
+
+        <input type="radio" id="pequeno" name="tamano_bebida" value="pequeno">
+
+        <label for="pequeno">Pequeño🥤</label><br>
+
+   
+
+        <input type="radio" id="mediano" name="tamano_bebida" value="mediano" checked>
+
+        <label for="mediano">Mediano 🥤</label><br>
+
+      
+
+        <input type="radio" id="grande" name="tamano_bebida" value="grande">
+
+        <label for="grande">Grande 🥤</label>
+
+    </div>
+
+ 
+
+    <br>
+
+ 
+
+    <!-- Casillas de verificación (Checkboxes) para los extras independientes -->
+
+    <div>
+
+        <label>Agrega Extras:</label><br>
+
+        <input type="checkbox" id="papas" name="extras" value="papas">
+
+        <label for="papas">Papas Fritas 🍟</label><br>
+
+       
+
+        <input type="checkbox" id="queso" name="extras" value="queso">
+
+        <label for="queso">Extra Queso 🧀</label><br>
+
+        <input type="checkbox" id="tocino" name="extras" value="tocino">
+
+        <label for="tocino">Tocino 🥓</label>
+
+    </div>
+
+    <br>
+
+    <!-- Área de texto para notas especiales -->
+
+    <div>
+
+        <label for="notas">Notas Especiales o Alergias:</label><br>
+
+        <textarea id="notas" name="notas" rows="4" cols="40" placeholder="Ej. Sin cebolla, salsa aparte..."></textarea>
+
+    </div>
+
+    <br>
+
+    <!-- Botón de envío -->
+
+    <div>
+
+        <button type="submit">Enviar Pedido 🚀</button>
+
+    </div>
+
+</form>
